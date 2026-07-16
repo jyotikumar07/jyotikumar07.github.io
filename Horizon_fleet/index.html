@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Fleet Logistics - Financial Summary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        h1, h2 {
+            color: #1a365d;
+        }
+        .dashboard-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .section {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #2d3748;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Horizon Fleet Logistics - Financial Summary Dashboard</h1>
+    <p>An interactive, executive-facing Power BI dashboard engineered to monitor cash flows, reconcile financial ledgers, and dynamic category tracking.</p>
+
+    <!-- Your annotated Canva image -->
+    <img src="assets/horizon-dashboard-annotated.png" alt="Horizon Fleet Dashboard Walkthrough" class="dashboard-img">
+
+    <div class="section">
+        <h2>📌 Technical Project Highlights</h2>
+        <ul>
+            <li><strong>Data Cleaning & Transformation:</strong> Utilized Power Query to clean transaction ledgers, isolate operational expenses, and build a unified star schema data model.</li>
+            <li><strong>Financial Reconciliation:</strong> Developed key metrics (Service Revenue, COGS, Net Profit) via DAX, ensuring 100% mathematical alignment back to the cash flow ledger.</li>
+            <li><strong>Advanced DAX Mechanics:</strong> Resolved multi-way category ties by writing a custom <code>TOPN</code> dynamic table and <code>EARLIER</code> filter-context measure to automatically group smaller expenses under a balanced "Other" slice.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📈 Business Action & Key Insights</h2>
+        <ul>
+            <li><strong>Identify Expense Leakage:</strong> Instantly surfaced a $1.2K engine repair outlier as the month's largest expense, enabling rapid cost-auditing.</li>
+            <li><strong>Working Capital Monitoring:</strong> Tracked daily cash inflow vs. outflow via an area trend chart, identifying key squeeze points throughout the month.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
